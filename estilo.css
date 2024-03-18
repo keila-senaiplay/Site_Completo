@@ -1,0 +1,114 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Muda a direção do flex para coluna */
+}
+
+.container {
+    flex: 1; /* Permite que o container cresça e ocupe o espaço disponível */
+    text-align: center;
+    margin: 20px auto; /* Ajuste para garantir espaçamento em torno do container */
+}
+
+.header-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento abaixo */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Centraliza o card */
+    width: 600px; /* Define uma largura fixa para o card */
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+}
+
+.card button[type="submit"] {
+    background: #004494; /* Cor de fundo azul */
+    color: #f4f4f4; /* Cor de texto branca para contraste */
+    cursor: pointer;
+    border: none; /* Remover a borda padrão */
+}
+
+.card button[type="submit"]:hover {
+    background: #0000ff; /* Cor de fundo mais clara quando o mouse está em cima */
+}
+
+
+.footer {
+    padding: 10px 0;
+    background: #004494;
+    color: #f4f4f4;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #f4f4f4 !important;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 40px; /* Ajuste este valor conforme necessário */
+}
+
+.navbar-nav li a {
+    background-color: #f4f4f4;
+    width: 140px; /* Define a largura fixa para todos os links */
+    text-align: center; /* Centraliza o texto dentro dos links */
+}
+.nav-link {
+    color: #000000  /*#0056b3*/ !important; /* Cor inicial do texto */
+    background-color: #f4f4f4; /* Fundo transparente inicialmente */
+    /*border: 2px solid #0056b3;  Bordas azuis para formar a "caixa" */
+    border-radius: 5px; /* Bordas arredondadas da "caixa" */
+    padding: 10px; /* Espaçamento interno para os links */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cores */
+}
+.nav-link:hover, .nav-link:focus {
+    color: #f4f4f4 !important; /* Cor do texto ao passar o mouse */
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .card, .header-image {
+        width: 90%; /* Ajusta a largura para melhor visualização em dispositivos menores */
+    }
+}
+
+.citation {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.justified {
+    text-align: justify;
+}
